@@ -1,7 +1,7 @@
 import pytest
 from pydantic import ValidationError
-from src.ir.model import Pipeline, Operation, Dataset
-from src.ir.types import OpType, DataType
+from etl_ir.model import Pipeline, Operation, Dataset
+from etl_ir.types import OpType, DataType
 
 class TestDataset:
     def test_create_valid_dataset(self):

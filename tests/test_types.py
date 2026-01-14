@@ -1,5 +1,5 @@
 import pytest
-from src.ir.types import OpType, DataType
+from etl_ir.types import OpType, DataType
 
 def test_critical_op_types_exist():
     """Ensure the OpTypes required by the compiler are present."""
