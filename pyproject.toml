@@ -1,0 +1,10 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "etl-ir-core"
+version = "1.0.0"
+dependencies = [
+  "pydantic>=2.0"
+]
