@@ -17,7 +17,7 @@ class OpType(str, Enum):
     FILTER_ROWS = "filter_rows"          # <--- WAS "FILTER"
     AGGREGATE = "aggregate"
     JOIN = "join"
-    SORT = "sort"
+    SORT_ROWS = "sort_rows"
     
     # Structural / Legacy
     GENERIC_TRANSFORM = "generic_transform" # <--- WAS "GENERIC"
@@ -25,3 +25,4 @@ class OpType(str, Enum):
     
     # Optimizations
     BATCH_COMPUTE = "batch_compute"
+
