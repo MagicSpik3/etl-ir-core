@@ -1,6 +1,30 @@
 # etl-ir-core
 # ETL Compiler: Shared IR Core (`etl-ir-core`)
 
+
+# 🧠 ETL IR Core (Intermediate Representation)
+
+This library defines the **Strict Type System** for the compiler platform. It serves as the contract between the Parser (SPSS) and the Generator (R).
+
+## Why It Matters
+By decoupling the input language from the output language, we avoid an $N \times M$ complexity problem. We parse once to IR, and can generate code for **R**, **Python**, **SQL**, or **Excel** from the same model.
+
+## Data Structures
+* **`Pipeline`**: The top-level container carrying Metadata, Datasets, and Operations.
+* **`Operation`**: Atomic logic units (e.g., `COMPUTE_COLUMNS`, `FILTER_ROWS`).
+* **`DataType`**: Strict enum types ensuring we never mix Strings and Integers accidentally.
+
+## Usage
+```python
+from etl_ir.model import Pipeline, Operation
+# Strictly typed validation via Pydantic
+
+```
+
+```
+
+---
+
 > **The Single Source of Truth for the ETL Compiler Toolchain.**
 
 This repository contains the **Schema Definitions**, **Pydantic Models**, and **Enumerations** that define the Intermediate Representation (IR) used across the entire compiler lifecycle. 
