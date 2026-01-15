@@ -25,6 +25,6 @@ class Operation(BaseModel):
     parameters: Dict[str, Any] = Field(default_factory=dict)
 
 class Pipeline(BaseModel):
-    metadata: Dict[str, str] = Field(default_factory=dict)
+    metadata: Dict[str, Any] = Field(default_factory=dict)
     datasets: List[Dataset]
     operations: List[Operation]
