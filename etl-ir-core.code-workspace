@@ -1,12 +1,5 @@
 {
-	"folders": [
-		{
-			"path": "."
-		}
-	],
 	"settings": {
-  "workbench.colorCustomizations": {
-    "window.activeBorder": "#ff0000",
-    "window.inactiveBorder": "#ff000080"
-  }
+		"workbench.colorTheme": "Visual Studio Light"
+	}
 }
